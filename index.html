@@ -3,33 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página Web</title>
+  <title>Página basada en video</title>
   <style>
     body {
-      background-color: #121212;
-      color: white;
+      margin: 0;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 40px;
+      background-color: #f4f4f4;
+      color: #333;
     }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #00cc66;
+    header {
+      background-color: #004080;
       color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
+      padding: 20px;
+      text-align: center;
     }
-    .btn:hover {
-      background-color: #00994d;
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .video-frame {
+      max-width: 90%;
+      height: auto;
+      border: 2px solid #ccc;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .content {
+      max-width: 800px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e0e0e0;
     }
   </style>
 </head>
 <body>
-  <h1>¡Bienvenido a mi página!</h1>
-  <p>Esta es una web simple publicada con GitHub Pages.</p>
-  <a href="#" class="btn">Comenzar</a>
+  <header>
+    <h1>Título del Sitio</h1>
+  </header>
+  <main>
+    <img src="extracted_frame.jpg" alt="Diseño basado en video" class="video-frame">
+    <div class="content">
+      <h2>Encabezado de contenido</h2>
+      <p>Este es un ejemplo de página basada en el diseño visual de un video. Aquí puedes agregar texto, imágenes, o cualquier otro contenido relevante.</p>
+    </div>
+  </main>
+  <footer>
+    <p>© 2025 Nombre del Sitio</p>
+  </footer>
 </body>
 </html>
